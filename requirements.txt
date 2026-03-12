@@ -1,7 +1,7 @@
 
-conda create -n pypi_gym python=3.12 -y
-conda activate pypi_gym
-
+#conda create -n pypi_gym python=3.12 -y
+#conda activate pypi_gym
+#python run_installs.py requirements.txt
 
 pip install "gymnasium[classic-control]"
 conda install -c conda-forge swig box2d-py -y
