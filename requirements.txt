@@ -1,0 +1,23 @@
+
+conda create -n pypi_gym python=3.12 -y
+conda activate pypi_gym
+
+
+pip install "gymnasium[classic-control]"
+conda install -c conda-forge swig box2d-py -y
+
+
+python -m pip install --upgrade build setuptools wheel twine packaging
+
+
+
+python -m pip install -U pygame == 2.6.1
+
+conda install -c conda-forge jupyterlab jupyter notebook spyder pandas matplotlib pillow -y
+
+
+python -c "import mobile_robot_nav; print(mobile_robot_nav.__version__)"
+python -c "import gymnasium as gym; import mobile_robot_nav; env = gym.make('MobileRobotNav-v0'); print(env)"
+
+
+
