@@ -11,7 +11,7 @@ python -m pip install --upgrade build setuptools wheel twine packaging
 
 
 
-python -m pip install -U pygame == 2.6.1
+python -m pip install -U pygame==2.6.1
 
 conda install -c conda-forge jupyterlab jupyter notebook spyder pandas matplotlib pillow -y
 
