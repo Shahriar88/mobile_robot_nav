@@ -15,9 +15,10 @@ python -m pip install -U pygame==2.6.1
 
 conda install -c conda-forge jupyterlab jupyter notebook spyder pandas matplotlib pillow -y
 
-
+pip install mobile-robot-nav
 python -c "import mobile_robot_nav; print(mobile_robot_nav.__version__)"
 python -c "import gymnasium as gym; import mobile_robot_nav; env = gym.make('MobileRobotNav-v0'); print(env)"
+
 
 
 
